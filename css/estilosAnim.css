@@ -1,0 +1,24 @@
+header {
+    font-size: 1rem; 
+    animation: none; 
+}
+header:hover{
+    animation: tamanio 0.2s forwards;
+}
+@keyframes tamanio {
+    from{font-size:1rem;}
+    to{font-size: 1.3rem;}
+}
+header:not(:hover){
+    animation: tamanio-not 0.2s forwards;
+}
+@keyframes tamanio-not {
+    from{font-size:1.3rem;}
+    to{font-size: 1rem;}
+}
+a:hover{
+    color: rgb(0, 154, 214);
+}
+a:active {
+    color: rgb(0, 255, 242);
+}
